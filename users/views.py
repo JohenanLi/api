@@ -230,7 +230,7 @@ class CodeAPIView(View):
         from aliyunsdkcore.request import CommonRequest
         import json,random
         def send_sms(template, username):
-            client = AcsClient('LTAI4GE9gyA5mGcpWPA9NPYv', 'zUIELiYhVBW01htS8cyb3jx9TGleGD', 'default')#AccessKey and AKid
+            client = AcsClient(,,)
             request = CommonRequest()
             request.set_accept_format('json')
             request.set_domain('dysmsapi.aliyuncs.com')
